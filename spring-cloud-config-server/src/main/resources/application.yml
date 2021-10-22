@@ -1,0 +1,18 @@
+#To pull config properties from Git
+spring:
+    application:
+        name: spring-cloud-config-server 
+    cloud:
+        config:
+            server:
+                git:
+                    uri : "file:///${user.home}/Desktop/All GIT repositiories here/microservices-javabrains/config-repo"
+                    #uri : "https://github.com/1997sanket/movie-catalog-microservice-app-config-repo.git"   -> not working
+                    
+
+
+server:
+    port: 8888
+
+
+
